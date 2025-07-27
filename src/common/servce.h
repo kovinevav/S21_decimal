@@ -1,9 +1,9 @@
 #ifndef SERVCE_H
 #define SERVCE_H
 
-#include "../common/dectype.h"
+#include "../s21_decimal.h"
 
-int get_exponemt(float num);
-int get_exponent(s21_decimal value);
+// int get_exponemt(float num);
+// int get_exponent(s21_decimal value);
 
 #endif

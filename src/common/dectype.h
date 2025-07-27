@@ -13,4 +13,6 @@ typedef struct {
   char sign;
 } longDec;
 
+int sometest();
+
 #endif

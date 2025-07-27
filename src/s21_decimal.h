@@ -5,6 +5,10 @@
 #include <string.h>
 
 #include "common/dectype.h"
+#include "float_to_dec/s21_from_float_to_decimal.h"
+#include "int_to_dec/s21_from_int_to_decimal.h"
+#include "int_to_dec/s21_from_int_to_decimal.h"
+
 
 /* bits[0], bits[1], и bits[2] содержат младшие, средние и старшие 32 бита
 96-разрядного целого числа соответственно. bits[3] содержит коэффициент
@@ -15,21 +19,21 @@
 нулю. Бит 31 содержит знак; 0 означает положительный, а 1 означает
 отрицательный. */
 
-int s21_from_int_to_decimal(int src, s21_decimal *dst);
-int s21_from_float_to_decimal(float src, s21_decimal *dst);
-int s21_from_decimal_to_int(s21_decimal src, int *dst);
-int s21_from_decimal_to_float(s21_decimal src, float *dst);
+// int s21_from_int_to_decimal(int src, s21_decimal *dst);
+// int s21_from_float_to_decimal(float src, s21_decimal *dst);
+// int s21_from_decimal_to_int(s21_decimal src, int *dst);
+// int s21_from_decimal_to_float(s21_decimal src, float *dst);
 
-int s21_add(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
-int s21_sub(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
-int s21_mul(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
-int s21_div(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
+// int s21_add(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
+// int s21_sub(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
+// int s21_mul(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
+// int s21_div(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
 
-int s21_is_less(s21_decimal, s21_decimal);
-int s21_is_less_or_equal(s21_decimal, s21_decimal);
-int s21_is_greater(s21_decimal, s21_decimal);
-int s21_is_greater_or_equal(s21_decimal, s21_decimal);
-int s21_is_equal(s21_decimal, s21_decimal);
-int s21_is_not_equal(s21_decimal, s21_decimal);
+// int s21_is_less(s21_decimal, s21_decimal);
+// int s21_is_less_or_equal(s21_decimal, s21_decimal);
+// int s21_is_greater(s21_decimal, s21_decimal);
+// int s21_is_greater_or_equal(s21_decimal, s21_decimal);
+// int s21_is_equal(s21_decimal, s21_decimal);
+// int s21_is_not_equal(s21_decimal, s21_decimal);
 
 #endif

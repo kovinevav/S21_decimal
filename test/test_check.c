@@ -5,7 +5,10 @@
 
 #include "../src/s21_decimal.h"
 
-START_TEST(test_Of_None) { ck_assert_int_eq(1, 1); }
+START_TEST(test_Of_None) {
+  ck_assert_int_eq(sometest(), 7);
+  ck_assert_int_eq(1, 1);
+}
 END_TEST
 void testOfNone(TCase *tc_core) { tcase_add_test(tc_core, test_Of_None); }
 
