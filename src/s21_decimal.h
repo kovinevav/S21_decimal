@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "common/dectype.h"
 #include "float_to_dec/s21_from_float_to_decimal.h"
 #include "int_to_dec/s21_from_int_to_decimal.h"
 #include "int_to_dec/s21_from_int_to_decimal.h"
