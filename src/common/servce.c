@@ -1,6 +1,5 @@
 #include "servce.h"
 
-
 // int get_exponemt(float num) {
 //     int exp = 0;
 //     while (round(num) != num) {
