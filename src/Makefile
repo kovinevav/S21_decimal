@@ -55,7 +55,7 @@ test: clean
 	$(foreach fldr,$(FOLDERS),$(foreach file, $(wildcard $(fldr)/*.c), gcc $(TESTFLAG) -c $(file) -o $(file).o;))
 	$(foreach file, $(wildcard $(TEST_DIR)/*.c), gcc $(CFLAGS) -c $(file) -o $(file).o;)
 	@if [ ! -d "$(TEST_DIR)/result" ]; then mkdir $(TEST_DIR)/result; fi
-	gcc *.o */*.o -o $(TEST_DIR)/$@ $(TESTLIB)
+	gcc *.o */*.o $(TEST_DIR)/*.o -o $(TEST_DIR)/$@ $(TESTLIB)
 	$(TEST_DIR)/$@
 
 gcov_report: test
