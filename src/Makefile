@@ -27,7 +27,7 @@ clangi: clf
 	$(CLF) -i */*.h
 	$(CLF) -i *.c
 	$(CLF) -i *.h
-	$(CLF) -i ../test/*.c
+	$(CLF) -i $(TEST_DIR)/*.c
 
 check:
 	@clear
@@ -42,7 +42,7 @@ check:
 	$(CLF) -n */*.h
 	$(CLF) -n *.c
 	$(CLF) -n *.h
-	$(CLF) -n ../test/*.c
+	$(CLF) -n $(TEST_DIR)/*.c
 
 	@echo ' ';
 	cppcheck --enable=all --check-level=exhaustive --suppress=missingIncludeSystem */*.c
@@ -59,7 +59,7 @@ test: clean
 	$(TEST_DIR)/$@
 
 gcov_report: test
-	lcov --directory $(TEST_DIR) --capture -o $(TEST_DIR)/result/coverage.info #надо исправить каталог назначения
+	lcov --directory . --capture -o $(TEST_DIR)/result/coverage.info #надо исправить каталог назначения
 	genhtml --output-directory $(TEST_DIR)/result/report --legend $(TEST_DIR)/result/coverage.info
 
 s21_decimal.a: $(OBJECTS)
