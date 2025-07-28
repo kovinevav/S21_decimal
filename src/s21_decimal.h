@@ -1,13 +1,14 @@
 #ifndef S21_DECIMAL_H
 #define S21_DECIMAL_H
+
 // #include <stdint.h>
 // #include <stdio.h>
 // #include <string.h>
 
+#include "dec_to_int/s21_from_decimal_to_int.h"
 #include "float_to_dec/s21_from_float_to_decimal.h"
 #include "int_to_dec/s21_from_int_to_decimal.h"
 #include "s21_add/s21_add.h"
-
 
 /* bits[0], bits[1], и bits[2] содержат младшие, средние и старшие 32 бита
 96-разрядного целого числа соответственно. bits[3] содержит коэффициент
